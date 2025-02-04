@@ -23,7 +23,7 @@
         }
 
         header h1 {
-            color: #fff;
+            color: #f0a500;
             margin: 0;
         }
 
@@ -53,10 +53,10 @@
         }
 
         .content img {
-            width: 300px;
-            height: 200px;
+            width: 600px; /* Double the original size */
+            height: 400px; /* Double the original size */
             object-fit: cover;
-            margin: 10px;
+            margin: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
@@ -101,6 +101,14 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Additional Spacing for Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Add space between the images */
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
@@ -131,19 +139,23 @@
     <div class="content" id="projects">
         <h2>Projects</h2>
         <p>Check out some of my recent work:</p>
-        <div>
-            <a href="https://github.com/ShedrachNwankwo/Water-quality-and-infrastructure-analysis" target="_blank">
-                <img src="Maji.jpg" alt="Water Quality">
-                <div class="project-title">
-                    <a href="https://github.com/ShedrachNwankwo/Water-quality-and-infrastructure-analysis" target="_blank">Water Quality and Infrastructure Analysis</a>
-                </div>
-            </a>
-            <a href="https://github.com/ShedrachNwankwo/Patients-Emergency-Room-Visit" target="_blank">
-                <img src="ER.png" alt="Emergency Room visit">
-                <div class="project-title">
-                    <a href="https://github.com/ShedrachNwankwo/Patients-Emergency-Room-Visit" target="_blank">Emergency Room Visit Analysis</a>
-                </div>
-            </a>
+        <div class="projects-container">
+            <div>
+                <a href="https://github.com/ShedrachNwankwo/Water-quality-and-infrastructure-analysis" target="_blank">
+                    <img src="Maji.jpg" alt="Water Quality">
+                    <div class="project-title">
+                        <a href="https://github.com/ShedrachNwankwo/Water-quality-and-infrastructure-analysis" target="_blank">Water Quality and Infrastructure Analysis</a>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ShedrachNwankwo/Patients-Emergency-Room-Visit" target="_blank">
+                    <img src="ER.png" alt="Emergency Room visit">
+                    <div class="project-title">
+                        <a href="https://github.com/ShedrachNwankwo/Patients-Emergency-Room-Visit" target="_blank">Emergency Room Visit Analysis</a>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
